@@ -1,0 +1,16 @@
+{
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+
+    "vim.leader": " ",
+    "vim.vimrc.enable": true,
+    "vim.handleKeys": {
+        "<C-b>": false
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.colorTheme": "Zenburn",
+
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    }
+}

@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+get_target_fallback() {
+    if [ -z "$1" ]; then
+        echo "No branch provided."
+        exit 1
+    fi
+    branch="$1"
+    if [[ "$branch" == *"/"* ]]; then
+        echo "$branch $branch"
+        return
+    fi
+    target="${branch##*:}"
+    if ! [[ "$target" =~ ^(master|(saas-)?[0-9]{2}\.[0-9]) ]]; then
+        echo "Invalid branch name format."
+        exit 1
+    fi
+    fallback="${BASH_REMATCH[0]}"
+    echo "$target $fallback"
+}
+
+read -r target fallback < <(get_target_fallback "$1")
+echo "Checking out branch in both directories [target=$target, fallback=$fallback]..."
+
+(cd "$HOME/src/odoo" && git checkout "$target" || git checkout "$fallback") &
+(cd "$HOME/src/enterprise" && git checkout "$target" || git checkout "$fallback") &
+
+wait
+
+"$HOME/bin/setdb" "${target##*/}"
+echo "Done."
