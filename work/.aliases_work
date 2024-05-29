@@ -1,4 +1,7 @@
 alias ob="~/src/odoo/odoo-bin"
+obi() {
+    ob -i "$(find ~/src/odoo/addons ~/src/enterprise -mindepth 1 -maxdepth 1 -type d | rev | cut -d/ -f 1 | rev | sort | fzf -m | paste -sd,)"
+}
 alias ofe="both git fetch --all"
 
 alias cdo="cd ~/src/odoo"
