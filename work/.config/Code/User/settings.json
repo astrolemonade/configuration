@@ -12,5 +12,6 @@
 
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
-    }
+    },
+    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace"
 }
