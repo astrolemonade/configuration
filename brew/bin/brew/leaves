@@ -3,6 +3,7 @@ fd
 fzf
 git-lfs
 mpv
+neovim
 node
 pyenv
 redis

@@ -1,5 +1,5 @@
 export TERM=xterm-256color
-export EDITOR=vim
+export EDITOR=nvim
 export VISUAL="$EDITOR"
 export CLICOLOR=1
 export PROMPT="%n@%m:%B%F{green}%~%f%b$ "

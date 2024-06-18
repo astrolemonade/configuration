@@ -33,4 +33,4 @@ vnoremap <leader>y "+y
 nnoremap <leader>p "+p
 vnoremap <leader>p "+p
 
-color zenburn
+color elflord
