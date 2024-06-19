@@ -16,6 +16,7 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.guicursor = 'n-v-i-c:block-Cursor'
+vim.opt.wrap = false
 
 vim.g.netrw_banner = 0
 

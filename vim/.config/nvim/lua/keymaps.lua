@@ -13,6 +13,13 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+vim.keymap.set({ 'n', 'v' }, '<leader>y', '"+y', { desc = 'Yank to OS clipboard' })
+vim.keymap.set({ 'n', 'v' }, '<leader>Y', '"+Y', { desc = 'Yank line to OS clipboard' })
+vim.keymap.set({ 'n', 'v' }, '<leader>d', '"+d', { desc = 'Delete to OS clipboard' })
+vim.keymap.set({ 'n', 'v' }, '<leader>D', '"+D', { desc = 'Delete line to OS clipboard' })
+vim.keymap.set('n', '<leader>p', '"+p', { desc = 'Paste from OS clipboard after cursor' })
+vim.keymap.set('n', '<leader>P', '"+P', { desc = 'Paste from OS clipboard before cursor' })
+
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
   group = vim.api.nvim_create_augroup('highlight-yank', { clear = true }),
