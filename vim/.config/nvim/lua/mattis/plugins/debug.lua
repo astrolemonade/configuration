@@ -19,6 +19,7 @@ return {
     }
 
     vim.keymap.set('n', '<F5>', dap.continue, { desc = 'Debug: Start/Continue' })
+    vim.keymap.set('n', '<leader><F5>', require('dap.ext.vscode').load_launchjs, { desc = 'Debug: Load debug config' })
     vim.keymap.set('n', '<F6>', dap.terminate, { desc = 'Debug: Terminate' })
     vim.keymap.set('n', '<F1>', dap.step_into, { desc = 'Debug: Step Into' })
     vim.keymap.set('n', '<F2>', dap.step_over, { desc = 'Debug: Step Over' })
@@ -40,8 +41,6 @@ return {
     dap.listeners.before.event_exited['dapui_config'] = dapui.close
 
     require('dap-python').setup 'python'
-
-    require('dap.ext.vscode').load_launchjs()
   end,
 }
 
