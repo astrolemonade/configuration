@@ -28,4 +28,13 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+local function toggle_background()
+  if vim.o.background == 'dark' then
+    vim.o.background = 'light'
+  else
+    vim.o.background = 'dark'
+  end
+end
+vim.keymap.set('n', '<leader>bg', toggle_background, { noremap = true, silent = true, desc = 'Toggle light/dark background' })
+
 -- vim: ts=2 sts=2 sw=2 et
