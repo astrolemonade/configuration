@@ -8,7 +8,6 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.signcolumn = 'yes'
 vim.opt.updatetime = 250
-vim.opt.timeoutlen = 300
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.list = true
@@ -17,5 +16,7 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.guicursor = 'n-v-i-c:block-Cursor'
+
+vim.g.netrw_banner = 0
 
 -- vim: ts=2 sts=2 sw=2 et
