@@ -2,6 +2,7 @@ cmake
 fd
 fzf
 git-lfs
+jesseduffield/lazygit/lazygit
 mpv
 neovim
 node
