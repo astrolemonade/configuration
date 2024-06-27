@@ -17,6 +17,10 @@ if [ -f ~/.aliases_work ]; then
     . ~/.aliases_work
 fi
 
+if [ -f ~/.env ]; then
+    . ~/.env
+fi
+
 if [ -d "$HOME/bin" ] ; then
     export PATH="$HOME/bin:$PATH"
 fi

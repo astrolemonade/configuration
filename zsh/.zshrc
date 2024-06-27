@@ -15,6 +15,7 @@ setopt HIST_IGNORE_ALL_DUPS
 bindkey -e
 
 test -f ~/.aliases && source ~/.aliases
+test -f ~/.env && source ~/.env
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH" && eval "$(pyenv init -)"
