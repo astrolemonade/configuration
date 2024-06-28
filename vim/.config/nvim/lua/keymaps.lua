@@ -46,5 +46,3 @@ local function toggle_diagnostics()
   end
 end
 vim.keymap.set('n', '<leader>xd', toggle_diagnostics, { noremap = true, silent = true, desc = 'Toggle diagnostics' })
-
--- vim: ts=2 sts=2 sw=2 et

@@ -18,5 +18,3 @@ vim.opt.scrolloff = 10
 vim.opt.guicursor = 'n-v-i-c:block-Cursor'
 vim.opt.wrap = false
 vim.opt.shortmess:append 'I'
-
--- vim: ts=2 sts=2 sw=2 et

@@ -12,5 +12,3 @@ vim.api.nvim_create_user_command('CopyCodeBlock', function(opts)
   vim.fn.setreg('+', result)
   vim.notify 'Text copied to clipboard'
 end, { range = true })
-
--- vim: ts=2 sts=2 sw=2 et
