@@ -3,6 +3,7 @@ vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
 require 'options'
 require 'keymaps'
+require 'misc'
 require 'lazy-bootstrap'
 require 'lazy-plugins'
 
