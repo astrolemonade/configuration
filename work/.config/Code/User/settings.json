@@ -8,7 +8,9 @@
         "<C-b>": false
     },
     "github.copilot.editor.enableAutoCompletions": true,
-    "workbench.colorTheme": "Zenburn",
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "gruvboxMaterial.darkContrast": "hard",
+    "gruvboxMaterial.darkPalette": "original",
 
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
