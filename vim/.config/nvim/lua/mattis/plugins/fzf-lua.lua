@@ -7,7 +7,7 @@ return {
     config = function()
       local fzf = require 'fzf-lua'
 
-      fzf.setup { 'telescope' }
+      fzf.setup { 'telescope', fzf_colors = false }
 
       vim.keymap.set('n', '<leader>sh', fzf.helptags, { desc = 'fzf: [S]earch [H]elp' })
       vim.keymap.set('n', '<leader>sk', fzf.keymaps, { desc = 'fzf: [S]earch [K]eymaps' })
