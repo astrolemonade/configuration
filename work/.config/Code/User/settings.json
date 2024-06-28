@@ -1,19 +1,20 @@
 {
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "gruvboxMaterial.darkContrast": "hard",
+    "gruvboxMaterial.darkPalette": "original",
+
+    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
 
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
     "vim.leader": " ",
     "vim.vimrc.enable": true,
     "vim.handleKeys": {
         "<C-b>": false
     },
-    "github.copilot.editor.enableAutoCompletions": true,
-    "workbench.colorTheme": "Gruvbox Material Dark",
-    "gruvboxMaterial.darkContrast": "hard",
-    "gruvboxMaterial.darkPalette": "original",
 
-    "extensions.experimental.affinity": {
-        "vscodevim.vim": 1
-    },
-    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace"
+    "github.copilot.editor.enableAutoCompletions": true
 }
