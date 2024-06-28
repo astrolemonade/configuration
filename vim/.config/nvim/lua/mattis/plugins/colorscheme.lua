@@ -1,19 +1,13 @@
 return {
   {
-    'ellisonleao/gruvbox.nvim',
+    'sainnhe/gruvbox-material',
     priority = 1000,
-    init = function()
-      require('gruvbox').setup {
-        italic = {
-          strings = false,
-          emphasis = false,
-          comments = false,
-          operators = false,
-          folds = false,
-        },
-      }
+    config = function()
       vim.o.background = 'dark'
-      vim.cmd.colorscheme 'gruvbox'
+      vim.g.gruvbox_material_background = 'hard'
+      vim.g.gruvbox_material_foreground = 'original'
+      vim.g.gruvbox_material_disable_italic_comment = true
+      vim.cmd.colorscheme 'gruvbox-material'
     end,
   },
 }
