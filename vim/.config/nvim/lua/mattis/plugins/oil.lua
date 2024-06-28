@@ -9,8 +9,8 @@ return {
         },
       }
 
-      vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
-      vim.keymap.set("n", "<space>-", require("oil").toggle_float)
+      vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "oil: Open parent directory" })
+      vim.keymap.set("n", "<space>-", require("oil").toggle_float, { desc = "oil: Open parent directory in floating window" })
     end,
   },
 }
