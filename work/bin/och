@@ -7,7 +7,7 @@ get_branches() {
 
 get_target_fallback() {
     if [ -z "$1" ]; then
-        main_branches=("15.0" "16.0" "saas-16.3" "saas-16.4" "17.0" "saas-17.1" "saas-17.2" "master")
+        main_branches=("15.0" "16.0" "17.0" "saas-17.1" "saas-17.2" "saas-17.3" "master")
         main_branches=$(printf "%s\n" "${main_branches[@]}")
         odoo=$(get_branches "$HOME/src/odoo")
         enterprise=$(get_branches "$HOME/src/enterprise")
