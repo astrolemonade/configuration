@@ -1,5 +1,6 @@
 vim.api.nvim_create_autocmd('BufReadPost', {
   desc = 'Open file at the last position it was edited earlier',
+  ---@diagnostic disable-next-line: undefined-global
   group = misc_augroup,
   pattern = '*',
   command = 'silent! normal! g`"zv',

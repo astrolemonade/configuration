@@ -25,7 +25,7 @@ return {
     vim.keymap.set('n', '<F2>', dap.step_over, { desc = 'Debug: Step Over' })
     vim.keymap.set('n', '<F3>', dap.step_out, { desc = 'Debug: Step Out' })
     vim.keymap.set('n', '<space>?', function()
-      dapui.eval(nil, { enter = true })
+      dapui.eval(nil, { enter = true }) ---@diagnostic disable-line: missing-fields
     end, { desc = 'Debug: Eval' })
     vim.keymap.set('n', '<leader>b', dap.toggle_breakpoint, { desc = 'Debug: Toggle [b]reakpoint' })
     vim.keymap.set('n', '<leader>B', function()

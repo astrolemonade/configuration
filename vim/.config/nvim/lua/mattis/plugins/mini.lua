@@ -39,7 +39,7 @@ return {
       end
 
       ---@diagnostic disable-next-line: duplicate-set-field
-      statusline.section_fileinfo = function(args)
+      statusline.section_fileinfo = function()
         local filetype = vim.bo.filetype
         if (filetype == '') or vim.bo.buftype ~= '' then
           return ''
