@@ -4,7 +4,7 @@
     "gruvboxMaterial.darkPalette": "original",
     "gruvboxMaterial.italicComments": false,
 
-    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontFamily": "'BerkeleyMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
 
