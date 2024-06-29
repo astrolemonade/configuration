@@ -46,3 +46,8 @@ local function toggle_diagnostics()
   end
 end
 vim.keymap.set('n', '<leader>xd', toggle_diagnostics, { noremap = true, silent = true, desc = 'Toggle diagnostics' })
+
+vim.keymap.set('n', '<M-k>', '<cmd>resize +2<CR>', { desc = 'Increase Window Height' })
+vim.keymap.set('n', '<M-j>', '<cmd>resize -2<CR>', { desc = 'Decrease Window Height' })
+vim.keymap.set('n', '<M-l>', '<cmd>vertical resize -2<CR>', { desc = 'Decrease Window Width' })
+vim.keymap.set('n', '<M-h>', '<cmd>vertical resize +2<CR>', { desc = 'Increase Window Width' })
