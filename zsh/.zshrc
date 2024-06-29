@@ -12,6 +12,7 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_ALL_DUPS
 
+autoload -U compinit; compinit
 bindkey -e
 
 test -f ~/.aliases && source ~/.aliases
