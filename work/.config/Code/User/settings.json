@@ -1,7 +1,9 @@
 {
     "workbench.colorTheme": "Gruvbox Material Dark",
     "gruvboxMaterial.darkContrast": "hard",
+    "gruvboxMaterial.lightContrast": "medium",
     "gruvboxMaterial.darkPalette": "original",
+    "gruvboxMaterial.lightPalette": "original",
     "gruvboxMaterial.italicComments": false,
 
     "editor.fontFamily": "'BerkeleyMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
