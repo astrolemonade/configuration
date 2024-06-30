@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+hardcoded_dirs=("$HOME/configuration")
+
+if [[ $# -eq 1 ]]; then
+    selected=$1
+else
+    fd_dirs=$(fd --type d --max-depth 1 . ~/src ~/fun ~/work 2> /dev/null)
+    combined_dirs=$(printf "%s\n" "${hardcoded_dirs[@]}" "$fd_dirs")
+    selected=$(echo "$combined_dirs" | fzf)
+fi
+
+if [[ -z $selected ]]; then
+    exit 0
+fi
+
+selected_name=$(basename "$selected" | tr . _)
+tmux_running=$(pgrep tmux)
+
+if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+    tmux new-session -s $selected_name -c $selected
+    exit 0
+fi
+
+if ! tmux has-session -t=$selected_name 2> /dev/null; then
+    tmux new-session -ds $selected_name -c $selected
+fi
+
+if [[ -z $TMUX ]]; then
+    tmux attach -t $selected_name
+else
+    tmux switch-client -t $selected_name
+fi

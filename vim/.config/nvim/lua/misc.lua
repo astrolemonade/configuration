@@ -1,10 +1,10 @@
-vim.api.nvim_create_autocmd('BufReadPost', {
-  desc = 'Open file at the last position it was edited earlier',
-  ---@diagnostic disable-next-line: undefined-global
-  group = misc_augroup,
-  pattern = '*',
-  command = 'silent! normal! g`"zv',
-})
+-- vim.api.nvim_create_autocmd('BufReadPost', {
+--   desc = 'Open file at the last position it was edited earlier',
+--   ---@diagnostic disable-next-line: undefined-global
+--   group = misc_augroup,
+--   pattern = '*',
+--   command = 'silent! normal! g`"zv',
+-- })
 
 vim.api.nvim_create_user_command('CopyCodeBlock', function(opts)
   local lines = vim.api.nvim_buf_get_lines(0, opts.line1 - 1, opts.line2, true)

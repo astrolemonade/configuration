@@ -13,8 +13,8 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 vim.keymap.set({ 'n', 'v' }, '<leader>y', '"+y', { desc = '[y]ank to OS clipboard' })
 vim.keymap.set({ 'n', 'v' }, '<leader>Y', '"+Y', { desc = '[Y]ank line to OS clipboard' })
-vim.keymap.set({ 'n', 'v' }, '<leader>d', '"+d', { desc = '[d]elete to OS clipboard' })
-vim.keymap.set({ 'n', 'v' }, '<leader>D', '"+D', { desc = '[D]elete line to OS clipboard' })
+-- vim.keymap.set({ 'n', 'v' }, '<leader>d', '"+d', { desc = '[d]elete to OS clipboard' })
+-- vim.keymap.set({ 'n', 'v' }, '<leader>D', '"+D', { desc = '[D]elete line to OS clipboard' })
 vim.keymap.set('n', '<leader>p', '"+p', { desc = '[p]aste from OS clipboard after cursor' })
 vim.keymap.set('n', '<leader>P', '"+P', { desc = '[P]aste from OS clipboard before cursor' })
 

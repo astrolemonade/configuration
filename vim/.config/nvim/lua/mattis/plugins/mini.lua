@@ -5,6 +5,16 @@ return {
       require('mini.ai').setup { n_lines = 500 }
       require('mini.surround').setup()
       require('mini.pairs').setup()
+      local sessions = require 'mini.sessions'
+      sessions.setup {
+        autoread = true,
+      }
+      vim.keymap.set('n', '<leader>Sr', function()
+        sessions.select('read', {})
+      end, { desc = 'mini-[S]essions: [r]ead session' })
+      vim.keymap.set('n', '<leader>Sw', function()
+        sessions.select('write', {})
+      end, { desc = 'mini-[S]essions: [w]rite session' })
 
       local statusline = require 'mini.statusline'
       statusline.setup {
