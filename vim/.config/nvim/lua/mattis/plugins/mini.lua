@@ -8,6 +8,7 @@ return {
       local sessions = require 'mini.sessions'
       sessions.setup {
         autoread = true,
+        directory = '',
       }
       vim.keymap.set('n', '<leader>Sr', function()
         sessions.select('read', {})
