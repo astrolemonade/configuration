@@ -1,7 +1,6 @@
 return {
   {
     'hrsh7th/nvim-cmp',
-    event = 'InsertEnter',
     dependencies = {
       {
         'L3MON4D3/LuaSnip',
@@ -11,9 +10,12 @@ return {
           end
           return 'make install_jsregexp'
         end)(),
-        dependencies = {},
+        config = function()
+          require('luasnip.loaders.from_vscode').lazy_load { paths = vim.fn.stdpath 'config' .. '/snippets/' }
+        end,
       },
       'saadparwaiz1/cmp_luasnip',
+
       'hrsh7th/cmp-nvim-lsp',
       'hrsh7th/cmp-path',
     },
