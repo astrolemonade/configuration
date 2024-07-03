@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-hardcoded_dirs=("$HOME/configuration")
+hardcoded_dirs=("$HOME/configuration" "$HOME/src")
 
 if [[ $# -eq 1 ]]; then
     selected=$1
