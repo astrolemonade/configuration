@@ -21,5 +21,5 @@ local function update_lead()
   end
   vim.opt_local.listchars:append { leadmultispace = lead }
 end
-vim.api.nvim_create_autocmd('OptionSet', { pattern = { 'listchars', 'tabstop', 'filetype' }, callback = update_lead })
+vim.api.nvim_create_autocmd('OptionSet', { pattern = { 'listchars', 'tabstop', 'filetype', 'shiftwidth' }, callback = update_lead })
 vim.api.nvim_create_autocmd('VimEnter', { callback = update_lead, once = true })

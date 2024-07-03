@@ -1,28 +1,29 @@
+vim.opt.cursorline = true
+vim.opt.expandtab = true
+vim.opt.guicursor = 'n-v-i-c:block-Cursor'
+vim.opt.ignorecase = true
+vim.opt.inccommand = 'split'
+vim.opt.list = true
+vim.opt.listchars:append { leadmultispace = '┊ ' }
+vim.opt.mouse = 'a'
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.mouse = 'a'
--- vim.opt.showmode = false
--- vim.opt.breakindent = true
-vim.opt.undofile = true
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-vim.opt.signcolumn = 'yes'
-vim.opt.updatetime = 250
-vim.opt.splitright = true
-vim.opt.splitbelow = true
-vim.opt.list = true
-vim.opt.listchars = {
-  tab = '⇥ ',
-  trail = '+',
-  precedes = '<',
-  extends = '>',
-  space = '·',
-  nbsp = '␣',
-  leadmultispace = '┊ ',
-}
-vim.opt.inccommand = 'split'
-vim.opt.cursorline = true
 vim.opt.scrolloff = 10
-vim.opt.guicursor = 'n-v-i-c:block-Cursor'
-vim.opt.wrap = false
+vim.opt.shiftwidth = 4
 vim.opt.shortmess:append 'I'
+vim.opt.signcolumn = 'yes'
+vim.opt.smartcase = true
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.undofile = true
+vim.opt.updatetime = 250
+vim.opt.wrap = false
+
+-- vim.opt.listchars = {
+--   tab = '⇥ ',
+--   trail = '+',
+--   precedes = '<',
+--   extends = '>',
+--   nbsp = '␣',
+--   leadmultispace = '┊ ',
+-- }
