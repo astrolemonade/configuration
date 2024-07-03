@@ -33,3 +33,5 @@ if ! shopt -oq posix; then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+bind '"\ef":"$HOME/bin/tmux-sessionizer\n"'
