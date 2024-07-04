@@ -18,12 +18,3 @@ vim.opt.splitright = true
 vim.opt.undofile = true
 vim.opt.updatetime = 250
 vim.opt.wrap = false
-
--- vim.opt.listchars = {
---   tab = '⇥ ',
---   trail = '+',
---   precedes = '<',
---   extends = '>',
---   nbsp = '␣',
---   leadmultispace = '┊ ',
--- }

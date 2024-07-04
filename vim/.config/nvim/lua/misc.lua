@@ -12,7 +12,7 @@ vim.api.nvim_create_user_command('CopyCodeBlock', function(opts)
   local result = string.format('```%s\n%s\n```', vim.bo.filetype, content)
   vim.fn.setreg('+', result)
   vim.notify 'Text copied to clipboard'
-end, { range = true })
+end, { desc = 'Yank selection into a code block', range = true })
 
 local function update_lead()
   local lead = '┊'
@@ -21,5 +21,5 @@ local function update_lead()
   end
   vim.opt_local.listchars:append { leadmultispace = lead }
 end
-vim.api.nvim_create_autocmd('OptionSet', { pattern = { 'listchars', 'tabstop', 'filetype', 'shiftwidth' }, callback = update_lead })
+vim.api.nvim_create_autocmd('OptionSet', { pattern = { 'listchars', 'filetype', 'shiftwidth' }, callback = update_lead })
 vim.api.nvim_create_autocmd('VimEnter', { callback = update_lead, once = true })
