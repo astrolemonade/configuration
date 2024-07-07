@@ -68,7 +68,6 @@ return {
         clangd = {},
         pyright = {},
         tsserver = {},
-        zls = {},
 
         lua_ls = {
           settings = {
